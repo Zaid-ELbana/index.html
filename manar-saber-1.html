@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="منار صابر | Manar Saber – Social Media Strategist & Digital Brand Growth Expert. استراتيجية محتوى ذكية وهوية رقمية قوية ونمو حقيقي.">
+<meta name="keywords" content="منار صابر, Manar Saber, social media strategist, digital marketing, brand growth, استراتيجية سوشيال ميديا, تسويق رقمي">
+<meta name="author" content="Manar Saber">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="منار صابر | Manar Saber – Social Media Strategist">
+<meta property="og:description" content="نصنع حضورًا رقميًا يصنع التأثير. Building Digital Presence That Drives Real Growth.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="منار صابر | Manar Saber">
+<link rel="canonical" href="https://manarsaber.vercel.app">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a0a0a'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='18' font-weight='bold' fill='%23c8a96e'>م</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Cairo:wght@300;400;600;700;900&family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<title>منار صابر | Manar Saber – Social Media Strategist</title>
+<style>
+/* ═══════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════ */
+:root {
+  --black:  #0a0a0a;
+  --black2: #111111;
+  --black3: #181818;
+  --gold:   #c8a96e;
+  --gold2:  #e8c98a;
+  --beige:  #d4c5a9;
+  --white:  #f7f4ef;
+  --white2: #ede8e0;
+  --muted:  #888880;
+  --pad: 118px 0;
+  --nav-h: 72px;
+}
+
+/* ═══════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Cairo', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* ═══════════════════════════════════════════
+   BILINGUAL ENGINE
+   Single source of truth: data-lang on <html>
+   [data-ar]  → Arabic content nodes
+   [data-en]  → English content nodes
+═══════════════════════════════════════════ */
+[data-en] { display: none; }
+[data-ar] { display: revert; }
+
+html[data-lang="en"] [data-ar] { display: none !important; }
+html[data-lang="en"] [data-en] { display: revert !important; }
+html[data-lang="en"] {
+  direction: ltr;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ─── Typography per language ─── */
+/* AR mode: Cairo everywhere */
+html[data-lang="ar"] body         { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .hero-sub    { font-family: 'Cairo', sans-serif; font-size: 1rem; }
+html[data-lang="ar"] .svc-desc    { font-family: 'Cairo', sans-serif; font-size: .88rem; }
+html[data-lang="ar"] .about-desc  { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .pillar-desc { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .testi-text  { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .met-lbl     { font-family: 'Cairo', sans-serif; font-size: .78rem; }
+html[data-lang="ar"] .port-niche  { font-family: 'Cairo', sans-serif; font-size: .78rem; letter-spacing: 0; }
+html[data-lang="ar"] .kpi-sub     { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .nav-links a { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .form-input,
+html[data-lang="ar"] .form-textarea { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .form-btn    { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .mob-link    { font-family: 'Cairo', sans-serif; }
+html[data-lang="ar"] .btn-gold,
+html[data-lang="ar"] .btn-outline { font-family: 'Cairo', sans-serif; }
+
+/* EN mode: Montserrat for UI, Cormorant for display */
+html[data-lang="en"] .sec-title-ar  { font-family: 'Cormorant Garamond', serif; font-weight: 400; letter-spacing: .5px; }
+html[data-lang="en"] .about-desc    { font-family: 'Montserrat', sans-serif; font-size: .9rem; line-height: 1.9; }
+html[data-lang="en"] .svc-desc      { font-family: 'Montserrat', sans-serif; font-size: .82rem; }
+html[data-lang="en"] .pillar-desc   { font-family: 'Montserrat', sans-serif; }
+html[data-lang="en"] .testi-text    { font-family: 'Montserrat', sans-serif; font-size: .83rem; }
+html[data-lang="en"] .met-lbl       { font-family: 'Montserrat', sans-serif; font-size: .72rem; }
+html[data-lang="en"] .port-niche    { font-family: 'Montserrat', sans-serif; font-size: .65rem; letter-spacing: 2px; text-transform: uppercase; }
+html[data-lang="en"] .kpi-sub       { font-family: 'Montserrat', sans-serif; }
+html[data-lang="en"] .nav-links a   { font-family: 'Montserrat', sans-serif; }
+html[data-lang="en"] .form-input,
+html[data-lang="en"] .form-textarea { font-family: 'Montserrat', sans-serif; }
+html[data-lang="en"] .form-btn      { font-family: 'Montserrat', sans-serif; }
+html[data-lang="en"] .mob-link      { font-family: 'Montserrat', sans-serif; }
+html[data-lang="en"] .btn-gold,
+html[data-lang="en"] .btn-outline   { font-family: 'Montserrat', sans-serif; }
+
+/* ─── Section label decorative line ─── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .62rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+/* RTL: gold line AFTER the text (appears to the left visually) */
+html[data-lang="ar"] .section-label::after {
+  content: '';
+  display: inline-block;
+  width: 36px; height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+/* LTR: gold line BEFORE the text (appears to the left visually) */
+html[data-lang="en"] .section-label::before {
+  content: '';
+  display: inline-block;
+  width: 36px; height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+  order: -1;
+}
+/* Centered label (metrics) — both sides */
+.section-label.centered {
+  justify-content: center;
+}
+html[data-lang="ar"] .section-label.centered::before {
+  content: '';
+  display: inline-block;
+  width: 36px; height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+html[data-lang="en"] .section-label.centered::after {
+  content: '';
+  display: inline-block;
+  width: 36px; height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* ─── Hero divider gradient direction ─── */
+html[data-lang="ar"] .hero-divider { background: linear-gradient(to left, var(--gold), transparent); }
+html[data-lang="en"] .hero-divider { background: linear-gradient(to right, var(--gold), transparent); }
+
+/* ─── About layout order ─── */
+html[data-lang="ar"] .about-visual   { order: 2; }
+html[data-lang="ar"] .about-text-col { order: 1; }
+html[data-lang="en"] .about-visual   { order: 1; }
+html[data-lang="en"] .about-text-col { order: 2; }
+
+/* ─── About frame corner accents ─── */
+html[data-lang="ar"] .corner.tr { top: -1px; left: -1px;  border-width: 1px 1px 0 0; }
+html[data-lang="ar"] .corner.bl { bottom: -1px; right: -1px; border-width: 0 0 1px 1px; }
+html[data-lang="en"] .corner.tr { top: -1px; right: -1px; border-width: 1px 0 0 1px; }
+html[data-lang="en"] .corner.bl { bottom: -1px; left: -1px;  border-width: 0 1px 1px 0; }
+
+/* ─── About badge & shadow position ─── */
+html[data-lang="ar"] .about-badge        { top: 26px; right: auto; left: auto; inset-inline-end: -24px; }
+html[data-lang="en"] .about-badge        { top: 26px; right: auto; left: auto; inset-inline-start: -24px; }
+html[data-lang="ar"] .about-shadow-frame { bottom: -16px; inset-inline-start: -16px; }
+html[data-lang="en"] .about-shadow-frame { bottom: -16px; inset-inline-end:  -16px; }
+
+/* ─── Portfolio badge & initial ─── */
+html[data-lang="ar"] .port-badge   { inset-inline-start: 18px; }
+html[data-lang="ar"] .port-initial { inset-inline-end:   18px; }
+html[data-lang="en"] .port-badge   { inset-inline-end:   18px; }
+html[data-lang="en"] .port-initial { inset-inline-start: 18px; }
+
+/* ─── Progress bar fill direction ─── */
+html[data-lang="ar"] .met-fill { background: linear-gradient(to left,  var(--gold), var(--gold2)); }
+html[data-lang="en"] .met-fill { background: linear-gradient(to right, var(--gold), var(--gold2)); }
+
+/* ─── Service card arrow ─── */
+.svc-arrow { transition: opacity .3s, transform .3s; opacity: 0; }
+html[data-lang="ar"] .svc-arrow { transform: translateX(-8px); }
+html[data-lang="en"] .svc-arrow { transform: translateX( 8px); }
+.svc-card:hover .svc-arrow { opacity: 1; transform: translateX(0) !important; }
+
+/* ─── Contact layout order ─── */
+html[data-lang="ar"] .contact-info     { order: 2; }
+html[data-lang="ar"] .contact-form-col { order: 1; }
+html[data-lang="en"] .contact-info     { order: 1; }
+html[data-lang="en"] .contact-form-col { order: 2; }
+
+/* ─── Form submit ✦ side ─── */
+html[data-lang="ar"] .form-btn::after { right: 22px; left: auto; }
+html[data-lang="en"] .form-btn::after { left:  22px; right: auto; }
+
+/* ─── Hero glow side ─── */
+html[data-lang="ar"] .hero-glow { inset-inline-end: -180px; left: auto; }
+html[data-lang="en"] .hero-glow { inset-inline-end: -180px; left: auto; }
+
+/* ─── Hero vertical accent line ─── */
+html[data-lang="ar"] .hero-vert { inset-inline-start: 0; }
+html[data-lang="en"] .hero-vert { inset-inline-start: 0; }
+
+/* ─── btn-gold slide animation ─── */
+.btn-gold::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: var(--white);
+  transition: transform .4s cubic-bezier(.23,1,.32,1);
+}
+html[data-lang="ar"] .btn-gold::before { transform: translateX(-101%); }
+html[data-lang="en"] .btn-gold::before { transform: translateX( 101%); }
+.btn-gold:hover::before { transform: translateX(0) !important; }
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+═══════════════════════════════════════════ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* ═══════════════════════════════════════════
+   NOISE OVERLAY
+═══════════════════════════════════════════ */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  opacity: .45;
+}
+
+/* ═══════════════════════════════════════════
+   CURSOR
+═══════════════════════════════════════════ */
+.cursor {
+  position: fixed; width: 10px; height: 10px;
+  background: var(--gold); border-radius: 50%;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: difference;
+}
+.cursor-ring {
+  position: fixed; width: 38px; height: 38px;
+  border: 1px solid var(--gold); border-radius: 50%;
+  pointer-events: none; z-index: 9998;
+  transform: translate(-50%,-50%);
+  transition: width .3s, height .3s, opacity .3s;
+  opacity: .5;
+}
+
+/* ═══════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════ */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  padding: 22px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: background .5s, padding .4s;
+}
+nav.scrolled {
+  background: rgba(10,10,10,.96);
+  backdrop-filter: blur(20px);
+  padding: 14px 60px;
+  border-bottom: 1px solid rgba(200,169,110,.1);
+}
+.nav-logo {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700; font-size: 1.15rem;
+  color: var(--gold); text-decoration: none;
+  white-space: nowrap;
+}
+.nav-logo em { color: var(--white); font-style: normal; font-weight: 300; }
+.nav-links {
+  display: flex; gap: 36px; list-style: none; align-items: center;
+}
+.nav-links a {
+  color: var(--white2); text-decoration: none;
+  font-size: .75rem; font-weight: 400;
+  letter-spacing: 2px; text-transform: uppercase;
+  position: relative; transition: color .3s;
+}
+.nav-links a::after {
+  content: ''; position: absolute;
+  bottom: -4px; inset-inline-start: 0;
+  width: 0; height: 1px;
+  background: var(--gold); transition: width .3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 7px 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .68rem; letter-spacing: 2px;
+  cursor: none; transition: all .3s;
+}
+.lang-btn:hover { background: var(--gold); color: var(--black); }
+
+/* Mobile hamburger */
+.mob-menu {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(200,169,110,.35);
+  color: var(--gold);
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: none;
+}
+/* Mobile nav overlay */
+.mob-nav {
+  position: fixed; inset: 0;
+  background: rgba(10,10,10,.97);
+  z-index: 1100;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 28px;
+  transform: translateX(100%);
+  transition: transform .45s cubic-bezier(.23,1,.32,1);
+}
+html[data-lang="ar"] .mob-nav { transform: translateX(-100%); }
+.mob-nav.open { transform: translateX(0) !important; }
+.mob-close {
+  background: transparent; border: none;
+  color: var(--muted); font-size: 1.4rem;
+  cursor: none;
+  position: absolute; top: 22px;
+  inset-inline-end: 22px;
+}
+.mob-link {
+  color: var(--white2); text-decoration: none;
+  font-size: 1.2rem; font-weight: 600;
+  letter-spacing: 3px; text-transform: uppercase;
+  transition: color .3s;
+}
+.mob-link:hover { color: var(--gold); }
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+#hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; overflow: hidden;
+  background: radial-gradient(ellipse at 65% 50%, #1c1508 0%, var(--black) 68%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(200,169,110,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,169,110,.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 75%);
+}
+.hero-glow {
+  position: absolute; top: 50%;
+  transform: translateY(-50%);
+  width: 650px; height: 650px;
+  background: radial-gradient(circle, rgba(200,169,110,.09) 0%, transparent 70%);
+  pointer-events: none;
+  inset-inline-end: -180px;
+}
+.hero-vert {
+  position: absolute; inset-inline-start: 0;
+  top: 20%; bottom: 20%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  opacity: .22;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 60px 130px;
+  max-width: 860px; width: 100%;
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 36px;
+  opacity: 0; animation: fadeUp .9s .15s forwards;
+}
+.ey-line { width: 52px; height: 1px; background: var(--gold); flex-shrink: 0; }
+.ey-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65rem; letter-spacing: 4px; text-transform: uppercase;
+  color: var(--gold);
+}
+.hero-name-ar {
+  font-family: 'Cairo', sans-serif;
+  font-size: clamp(3.8rem, 8vw, 7.5rem);
+  font-weight: 900; line-height: 1; color: var(--white);
+  opacity: 0; animation: fadeUp .9s .3s forwards;
+}
+.hero-name-ar b { color: var(--gold); }
+.hero-name-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+  font-weight: 300; font-style: italic;
+  color: var(--beige); letter-spacing: 7px; margin-top: 6px;
+  opacity: 0; animation: fadeUp .9s .5s forwards;
+}
+.hero-divider {
+  width: 110px; height: 1px; margin: 28px 0;
+  opacity: 0; animation: fadeUp .9s .6s forwards;
+}
+.hero-headline {
+  font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+  font-weight: 700; line-height: 1.55; color: var(--white);
+  margin-bottom: 12px;
+  opacity: 0; animation: fadeUp .9s .75s forwards;
+}
+.hero-sub {
+  font-size: clamp(.8rem, 1.1vw, .95rem);
+  font-weight: 300; color: var(--muted);
+  letter-spacing: .8px; margin-bottom: 44px; max-width: 480px;
+  opacity: 0; animation: fadeUp .9s .9s forwards;
+}
+.hero-cta {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp .9s 1.05s forwards;
+}
+.btn-gold {
+  background: var(--gold); color: var(--black);
+  padding: 15px 36px;
+  font-size: .88rem; font-weight: 700; letter-spacing: 2px;
+  text-decoration: none; cursor: none;
+  position: relative; overflow: hidden; display: inline-block;
+}
+.btn-gold span { position: relative; z-index: 1; }
+.btn-outline {
+  border: 1px solid rgba(200,169,110,.45);
+  color: var(--gold); padding: 15px 36px;
+  font-size: .88rem; font-weight: 600; letter-spacing: 2px;
+  text-decoration: none; cursor: none; display: inline-block;
+  transition: all .3s;
+}
+.btn-outline:hover { border-color: var(--gold); background: rgba(200,169,110,.07); }
+
+.hero-stats {
+  position: absolute; bottom: 52px;
+  inset-inline: 60px;
+  display: flex; gap: 50px; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp .9s 1.3s forwards;
+}
+.hstat { border-top: 1px solid rgba(200,169,110,.2); padding-top: 18px; }
+.hstat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.3rem; font-weight: 600; color: var(--gold); line-height: 1;
+}
+.hstat-lbl {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65rem; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--muted); margin-top: 5px;
+}
+.scroll-hint {
+  position: absolute; bottom: 36px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center;
+  opacity: 0; animation: fadeIn 1s 2s forwards;
+}
+.scroll-bar {
+  width: 1px; height: 54px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════
+   MARQUEE
+═══════════════════════════════════════════ */
+.marquee-wrap { background: var(--gold); padding: 16px 0; overflow: hidden; }
+.marquee-inner {
+  display: flex; width: max-content;
+  animation: marqueeRun 28s linear infinite;
+}
+.mq-item {
+  white-space: nowrap; padding: 0 44px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .68rem; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--black);
+}
+.mq-dot { color: rgba(0,0,0,.3); margin: 0 8px; }
+
+/* ═══════════════════════════════════════════
+   SHARED LAYOUT
+═══════════════════════════════════════════ */
+.inner { max-width: 1200px; margin: 0 auto; padding: 0 60px; }
+
+.sec-title-ar {
+  font-family: 'Cairo', sans-serif;
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+  font-weight: 800; line-height: 1.25; color: var(--white);
+}
+.sec-title-ar b { color: var(--gold); }
+
+.sec-title-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+  font-weight: 400; line-height: 1.25; color: var(--white); letter-spacing: .5px;
+}
+.sec-title-en i { color: var(--gold); font-style: italic; }
+
+.gold-rule {
+  max-width: 1200px; margin: 0 auto; height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,169,110,.15), transparent);
+}
+
+/* ═══════════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════════ */
+#about { padding: var(--pad); background: var(--black2); }
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1.15fr;
+  gap: 90px; align-items: center;
+}
+/* Visual wrapper keeps badge + shadow properly contained */
+.about-visual { }
+.about-visual-wrap { position: relative; }
+.about-frame {
+  position: relative; width: 100%; aspect-ratio: 3/4;
+  background: var(--black3);
+  border: 1px solid rgba(200,169,110,.13); overflow: hidden;
+}
+.about-frame-bg {
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, #1c1609 0%, #0f0f0f 50%, #141a26 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.about-mono {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13rem; font-weight: 300; font-style: italic;
+  color: rgba(200,169,110,.07); line-height: 1; user-select: none;
+}
+.about-initials {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.about-initials span {
+  font-family: 'Cairo', sans-serif;
+  font-size: 4.5rem; font-weight: 900;
+  color: rgba(200,169,110,.5);
+  text-shadow: 0 0 55px rgba(200,169,110,.22);
+}
+.corner {
+  position: absolute; width: 28px; height: 28px;
+  border-color: var(--gold); border-style: solid; opacity: .45;
+}
+.about-badge {
+  position: absolute;
+  background: var(--gold); color: var(--black);
+  padding: 10px 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  white-space: nowrap;
+}
+.about-shadow-frame {
+  position: absolute; width: 55%; aspect-ratio: 1;
+  border: 1px solid rgba(200,169,110,.07); pointer-events: none;
+}
+.about-text-col { }
+.about-desc {
+  color: rgba(247,244,239,.68); font-size: 1rem;
+  line-height: 2.05; margin-top: 28px; font-weight: 300;
+}
+.about-desc b { color: var(--gold); font-weight: 600; }
+.pillars {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 18px; margin-top: 36px;
+}
+.pillar {
+  border: 1px solid rgba(200,169,110,.1); padding: 20px;
+  transition: border-color .3s, background .3s; cursor: none;
+}
+.pillar:hover { border-color: rgba(200,169,110,.36); background: rgba(200,169,110,.03); }
+.pillar-icon { font-size: 1.35rem; margin-bottom: 9px; }
+.pillar-title { font-size: .78rem; font-weight: 700; color: var(--gold); margin-bottom: 5px; }
+.pillar-desc { font-size: .74rem; color: var(--muted); line-height: 1.75; }
+
+/* ═══════════════════════════════════════════
+   SERVICES
+═══════════════════════════════════════════ */
+#services { padding: var(--pad); background: var(--black); }
+.services-hd { margin-bottom: 72px; }
+.svc-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2px; background: rgba(200,169,110,.07);
+}
+.svc-card {
+  background: var(--black); padding: 44px 38px 66px;
+  position: relative; overflow: hidden; cursor: none; transition: background .4s;
+}
+.svc-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(200,169,110,.05) 0%, transparent 55%);
+  opacity: 0; transition: opacity .4s;
+}
+.svc-card:hover { background: #131313; }
+.svc-card:hover::before { opacity: 1; }
+.svc-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .75rem; color: rgba(200,169,110,.28);
+  letter-spacing: 3px; margin-bottom: 28px;
+}
+.svc-icon {
+  width: 52px; height: 52px;
+  border: 1px solid rgba(200,169,110,.18);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; margin-bottom: 24px;
+  transition: border-color .3s, background .3s;
+}
+.svc-card:hover .svc-icon { border-color: var(--gold); background: rgba(200,169,110,.05); }
+.svc-name {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 12px;
+}
+.svc-name-en {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .95rem; font-weight: 600; color: var(--white);
+  margin-bottom: 12px; letter-spacing: .4px;
+}
+.svc-desc {
+  font-size: .82rem; color: var(--muted); line-height: 1.9; font-weight: 300;
+}
+.svc-arrow {
+  position: absolute; bottom: 38px; inset-inline-end: 38px;
+  font-size: 1.1rem; color: var(--gold);
+}
+
+/* ═══════════════════════════════════════════
+   PORTFOLIO
+═══════════════════════════════════════════ */
+#portfolio { padding: var(--pad); background: var(--black2); }
+.portfolio-hd { margin-bottom: 72px; }
+.port-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.port-card {
+  background: var(--black3);
+  border: 1px solid rgba(200,169,110,.08); overflow: hidden; cursor: none;
+  transition: transform .4s cubic-bezier(.23,1,.32,1), border-color .3s;
+}
+.port-card:hover { transform: translateY(-7px); border-color: rgba(200,169,110,.28); }
+.port-top {
+  height: 192px; position: relative;
+  background: linear-gradient(135deg, #1a1508 0%, #0f1928 100%); overflow: hidden;
+}
+.port-top::after {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 60%, rgba(200,169,110,.1) 0%, transparent 65%);
+}
+.port-badge {
+  position: absolute; top: 18px;
+  background: rgba(200,169,110,.13);
+  border: 1px solid rgba(200,169,110,.28);
+  color: var(--gold); font-size: .6rem; padding: 4px 12px;
+  font-family: 'Montserrat', sans-serif; letter-spacing: 2px; text-transform: uppercase;
+}
+.port-initial {
+  position: absolute; bottom: 18px;
+  font-family: 'Cairo', sans-serif; font-size: 1.35rem; font-weight: 900;
+  color: rgba(200,169,110,.5);
+}
+.port-body { padding: 26px; }
+.port-name {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 4px;
+}
+.port-name-en {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem; font-weight: 600; color: var(--white); margin-bottom: 4px;
+}
+.port-niche { margin-bottom: 18px; }
+.metrics-list { display: flex; flex-direction: column; gap: 9px; }
+.met-row {
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 10px;
+}
+.met-lbl { font-size: .72rem; color: var(--muted); white-space: nowrap; }
+.met-track { flex: 1; height: 2px; background: rgba(255,255,255,.06); }
+.met-fill { height: 100%; width: 0; transition: width 1.5s cubic-bezier(.23,1,.32,1); }
+.met-val {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; color: var(--gold); font-weight: 600; white-space: nowrap;
+}
+
+/* ═══════════════════════════════════════════
+   KPI METRICS
+═══════════════════════════════════════════ */
+#metrics { padding: var(--pad); background: var(--black); position: relative; }
+#metrics::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(200,169,110,.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+.metrics-hd { text-align: center; margin-bottom: 72px; }
+.kpi-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2px; background: rgba(200,169,110,.06);
+}
+.kpi-card {
+  background: var(--black); padding: 56px 36px; text-align: center;
+  position: relative; overflow: hidden; transition: background .4s; cursor: none;
+}
+.kpi-card::before {
+  content: ''; position: absolute; top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 50px; height: 1px; background: var(--gold); transition: width .4s;
+}
+.kpi-card:hover { background: #131313; }
+.kpi-card:hover::before { width: 100%; }
+.kpi-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.8rem; font-weight: 600; color: var(--gold); line-height: 1; margin-bottom: 10px;
+}
+.kpi-lbl {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65rem; letter-spacing: 3px; text-transform: uppercase; color: var(--muted);
+}
+.kpi-sub { font-size: .8rem; color: rgba(247,244,239,.42); margin-top: 8px; font-weight: 300; }
+
+/* ═══════════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════════ */
+#testimonials { padding: var(--pad); background: var(--black2); }
+.testi-hd { margin-bottom: 72px; }
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.testi-card {
+  background: var(--black); border: 1px solid rgba(200,169,110,.08);
+  padding: 36px; cursor: none;
+  transition: border-color .3s, transform .4s cubic-bezier(.23,1,.32,1);
+}
+.testi-card:hover { border-color: rgba(200,169,110,.24); transform: translateY(-4px); }
+.stars { color: var(--gold); font-size: .72rem; margin-bottom: 14px; letter-spacing: 3px; }
+.testi-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.5rem; line-height: .4;
+  color: rgba(200,169,110,.13); margin-bottom: 18px;
+}
+.testi-text {
+  font-size: .87rem;
+  color: rgba(247,244,239,.72); line-height: 1.95; font-weight: 300; margin-bottom: 26px;
+}
+.testi-text-en {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .82rem;
+  color: rgba(247,244,239,.72); line-height: 1.95; font-weight: 300; margin-bottom: 26px;
+}
+.testi-author { display: flex; align-items: center; gap: 14px; }
+.testi-av {
+  width: 46px; height: 46px; flex-shrink: 0;
+  border: 1px solid rgba(200,169,110,.2);
+  background: linear-gradient(135deg, #1c1609, #0f1928);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
+  color: var(--gold); font-style: italic;
+}
+.testi-name { font-size: .88rem; font-weight: 700; color: var(--white); margin-bottom: 3px; }
+.testi-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .62rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════════ */
+#contact { padding: var(--pad); background: var(--black); }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1.35fr;
+  gap: 90px; align-items: start;
+}
+.contact-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  font-weight: 400; font-style: italic; color: var(--white);
+  line-height: 1.45; margin: 26px 0 36px;
+}
+.contact-tagline b { color: var(--gold); font-style: normal; }
+.c-items { display: flex; flex-direction: column; gap: 22px; }
+.c-item { display: flex; align-items: center; gap: 14px; }
+.c-icon {
+  width: 38px; height: 38px; flex-shrink: 0;
+  border: 1px solid rgba(200,169,110,.18);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: .9rem;
+}
+.c-text { font-size: .85rem; color: var(--muted); text-decoration: none; }
+a.c-text:hover { color: var(--gold); }
+.form-row { margin-bottom: 22px; }
+.form-lbl {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .62rem; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 9px;
+}
+.form-input, .form-textarea {
+  width: 100%; background: transparent; border: none;
+  border-bottom: 1px solid rgba(200,169,110,.18);
+  padding: 12px 0; color: var(--white); font-size: .93rem;
+  outline: none; transition: border-color .3s; cursor: none;
+}
+.form-input:focus, .form-textarea:focus { border-color: var(--gold); }
+.form-input::placeholder, .form-textarea::placeholder { color: rgba(255,255,255,.18); }
+.form-textarea { resize: none; height: 96px; }
+.form-btn {
+  width: 100%; background: var(--gold); color: var(--black); border: none;
+  padding: 17px 40px; font-size: .88rem; font-weight: 700; letter-spacing: 2px;
+  cursor: none; transition: background .3s; position: relative;
+}
+.form-btn:hover { background: var(--gold2); }
+.form-btn::after {
+  content: '✦'; position: absolute; top: 50%;
+  transform: translateY(-50%);
+  font-size: .65rem; transition: transform .3s;
+}
+.form-btn:hover::after { transform: translateY(-50%) rotate(180deg); }
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+footer {
+  background: var(--black2);
+  border-top: 1px solid rgba(200,169,110,.09);
+  padding: 36px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 18px;
+}
+.footer-logo { font-family: 'Cairo', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: .62rem; color: var(--muted); letter-spacing: 2px; }
+.footer-soc { display: flex; gap: 12px; }
+.soc-link {
+  width: 34px; height: 34px;
+  border: 1px solid rgba(200,169,110,.18);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); text-decoration: none; font-size: .7rem;
+  transition: all .3s;
+}
+.soc-link:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ═══════════════════════════════════════════
+   REVEAL ANIMATIONS
+═══════════════════════════════════════════ */
+.reveal {
+  opacity: 0; transform: translateY(36px);
+  transition: opacity .75s cubic-bezier(.23,1,.32,1), transform .75s cubic-bezier(.23,1,.32,1);
+}
+.reveal.on { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: .12s; }
+.d2 { transition-delay: .22s; }
+.d3 { transition-delay: .32s; }
+
+@keyframes fadeUp   { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn   { from { opacity:0; } to { opacity:1; } }
+@keyframes scrollPulse { 0%,100% { opacity:1; } 50% { opacity:.3; } }
+@keyframes marqueeRun  { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — MOBILE
+═══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  nav { padding: 18px 22px; }
+  nav.scrolled { padding: 12px 22px; }
+  .nav-links { display: none; }
+  .mob-menu { display: flex; }
+
+  .inner { padding: 0 22px; }
+  .hero-content { padding: 0 22px 150px; }
+  .hero-stats { inset-inline: 22px; gap: 28px; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 44px; }
+  /* On mobile, visual always goes first regardless of language */
+  .about-visual   { order: 1 !important; max-width: 300px; }
+  .about-text-col { order: 2 !important; }
+
+  .port-grid { grid-template-columns: 1fr; }
+  .kpi-grid  { grid-template-columns: 1fr 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  /* On mobile, contact info first, form second — both languages */
+  .contact-info     { order: 1 !important; }
+  .contact-form-col { order: 2 !important; }
+
+  footer { padding: 28px 22px; flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="js-cur"></div>
+<div class="cursor-ring" id="js-ring"></div>
+
+<!-- ═══════ NAVBAR ═══════ -->
+<nav id="js-nav">
+  <a class="nav-logo" href="#">منار <em>صابر</em></a>
+  <ul class="nav-links">
+    <li><a href="#about"><span data-ar>عن منار</span><span data-en>About</span></a></li>
+    <li><a href="#services"><span data-ar>الخدمات</span><span data-en>Services</span></a></li>
+    <li><a href="#portfolio"><span data-ar>الأعمال</span><span data-en>Portfolio</span></a></li>
+    <li><a href="#contact"><span data-ar>تواصل</span><span data-en>Contact</span></a></li>
+    <li><button class="lang-btn" id="js-lang">EN</button></li>
+  </ul>
+  <button class="mob-menu" id="js-mob" aria-label="Open menu">☰</button>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="mob-nav" id="js-mobnav" role="dialog" aria-modal="true">
+  <button class="mob-close" id="js-mobclose" aria-label="Close menu">✕</button>
+  <a href="#about"     class="mob-link"><span data-ar>عن منار</span><span data-en>About</span></a>
+  <a href="#services"  class="mob-link"><span data-ar>الخدمات</span><span data-en>Services</span></a>
+  <a href="#portfolio" class="mob-link"><span data-ar>الأعمال</span><span data-en>Portfolio</span></a>
+  <a href="#contact"   class="mob-link"><span data-ar>تواصل</span><span data-en>Contact</span></a>
+  <button class="lang-btn" id="js-lang2">EN</button>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-vert" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow" aria-hidden="true">
+      <div class="ey-line"></div>
+      <span class="ey-text">Social Media Strategist · Digital Brand Expert</span>
+    </div>
+    <h1 class="hero-name-ar"><b>منار</b> صابر</h1>
+    <div class="hero-name-en" aria-hidden="true">Manar Saber</div>
+    <div class="hero-divider" aria-hidden="true"></div>
+    <h2 class="hero-headline">
+      <span data-ar>نصنع حضورًا رقميًا يصنع التأثير</span>
+      <span data-en>Building Digital Presence That Drives Real Growth</span>
+    </h2>
+    <p class="hero-sub">
+      <span data-ar>استراتيجية محتوى ذكية · هوية رقمية قوية · نمو حقيقي وقابل للقياس</span>
+      <span data-en>Smart Content Strategy · Strong Digital Identity · Real Measurable Growth</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn-gold">
+        <span data-ar>الأعمال</span><span data-en>Portfolio</span>
+      </a>
+      <a href="#contact" class="btn-outline">
+        <span data-ar>تواصل الآن</span><span data-en>Get In Touch</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-stats" aria-label="Key statistics">
+    <div class="hstat">
+      <div class="hstat-num">+50</div>
+      <div class="hstat-lbl"><span data-ar>علامة تجارية</span><span data-en>Brands Built</span></div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">3×</div>
+      <div class="hstat-lbl"><span data-ar>متوسط نمو الجمهور</span><span data-en>Avg. Audience Growth</span></div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">5+</div>
+      <div class="hstat-lbl"><span data-ar>سنوات خبرة</span><span data-en>Years Experience</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><div class="scroll-bar"></div></div>
+</section>
+
+<!-- ═══════ MARQUEE ═══════ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-inner">
+    <span class="mq-item">Content Strategy<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Brand Positioning<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">استراتيجية المحتوى<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Audience Growth<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">تحليل الأداء<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Digital Branding<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">إدارة الهوية الرقمية<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Paid Ads Planning<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">نمو الجمهور<span class="mq-dot"> ✦ </span></span>
+    <!-- Duplicate for seamless loop -->
+    <span class="mq-item">Content Strategy<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Brand Positioning<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">استراتيجية المحتوى<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Audience Growth<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">تحليل الأداء<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">Digital Branding<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">إدارة الهوية الرقمية<span class="mq-dot"> ✦ </span></span>
+    <span class="mq-item">نمو الجمهور<span class="mq-dot"> ✦ </span></span>
+  </div>
+</div>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about">
+  <div class="inner">
+    <div class="about-grid">
+
+      <div class="about-visual reveal">
+        <div class="about-visual-wrap">
+          <div class="about-frame">
+            <div class="about-frame-bg"><div class="about-mono" aria-hidden="true">M</div></div>
+            <div class="about-initials" aria-hidden="true"><span>م · ص</span></div>
+            <div class="corner tr" aria-hidden="true"></div>
+            <div class="corner bl" aria-hidden="true"></div>
+          </div>
+          <div class="about-shadow-frame" aria-hidden="true"></div>
+          <div class="about-badge">Digital Strategist</div>
+        </div>
+      </div>
+
+      <div class="about-text-col reveal d2">
+        <div class="section-label">
+          <span data-ar>من أنا</span><span data-en>About</span>
+        </div>
+        <h2 class="sec-title-ar" data-ar>أحوّل الصفحات<br>إلى <b>علامات تجارية</b></h2>
+        <h2 class="sec-title-en" data-en>Transforming Pages<br>into <i>Powerful Brands</i></h2>
+        <p class="about-desc" data-ar>
+          منار صابر استراتيجية رقمية متخصصة في تحويل الحسابات العادية إلى
+          <b>علامات رقمية قوية</b> تؤثر وتنمو. تعمل من خلال أنظمة محتوى ذكية،
+          وفهم عميق لعلم نفس الجمهور، وخطط نمو مبنية على البيانات لا على الصدفة.
+        </p>
+        <p class="about-desc" data-en>
+          Manar Saber is a digital strategist specializing in transforming ordinary pages
+          into <b>powerful digital brands</b> that create real impact — through intelligent
+          content systems, deep audience psychology, and data-driven growth plans, not guesswork.
+        </p>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="pillar-icon">🧠</div>
+            <div class="pillar-title"><span data-ar>تفكير استراتيجي</span><span data-en>Strategic Thinking</span></div>
+            <div class="pillar-desc"><span data-ar>كل خطوة مبنية على تحليل لا تخمين</span><span data-en>Every move built on analysis, not guessing</span></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📊</div>
+            <div class="pillar-title"><span data-ar>نتائج قابلة للقياس</span><span data-en>Measurable Results</span></div>
+            <div class="pillar-desc"><span data-ar>نمو حقيقي ومؤشرات أداء واضحة</span><span data-en>Real growth with clear KPIs</span></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">✦</div>
+            <div class="pillar-title"><span data-ar>هوية فريدة</span><span data-en>Unique Identity</span></div>
+            <div class="pillar-desc"><span data-ar>علامة تجارية رقمية لا تُنسى</span><span data-en>An unforgettable digital brand</span></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🎯</div>
+            <div class="pillar-title"><span data-ar>دقة في الاستهداف</span><span data-en>Precision Targeting</span></div>
+            <div class="pillar-desc"><span data-ar>الجمهور الصحيح في الوقت الصحيح</span><span data-en>Right audience at the right time</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="gold-rule" aria-hidden="true"></div>
+
+<!-- ═══════ SERVICES ═══════ -->
+<section id="services">
+  <div class="inner">
+    <div class="services-hd reveal">
+      <div class="section-label"><span data-ar>ما أقدمه</span><span data-en>Services</span></div>
+      <h2 class="sec-title-ar" data-ar>خدمات تصنع <b>الفارق</b></h2>
+      <h2 class="sec-title-en" data-en>Services That Make <i>The Difference</i></h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="svc-num">01</div><div class="svc-icon">📱</div>
+        <div class="svc-name" data-ar>إدارة وسائل التواصل</div>
+        <div class="svc-name-en" data-en>Social Media Management</div>
+        <p class="svc-desc" data-ar>إدارة احترافية كاملة لحساباتك على منصات التواصل الاجتماعي بما يعكس هويتك ويحقق أهدافك.</p>
+        <p class="svc-desc" data-en>Full professional management of your social accounts, reflecting your identity and achieving your goals.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+      <div class="svc-card reveal d1">
+        <div class="svc-num">02</div><div class="svc-icon">✍️</div>
+        <div class="svc-name" data-ar>استراتيجية المحتوى</div>
+        <div class="svc-name-en" data-en>Content Strategy</div>
+        <p class="svc-desc" data-ar>بناء نظام محتوى متكامل يجذب الجمهور الصحيح ويحول المتابعين إلى عملاء مخلصين.</p>
+        <p class="svc-desc" data-en>Building a complete content system that attracts the right audience and converts followers into loyal clients.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+      <div class="svc-card reveal d2">
+        <div class="svc-num">03</div><div class="svc-icon">🎨</div>
+        <div class="svc-name" data-ar>تأسيس الهوية الرقمية</div>
+        <div class="svc-name-en" data-en>Brand Positioning</div>
+        <p class="svc-desc" data-ar>تحديد وبناء هوية علامتك التجارية الرقمية بشكل يميزها ويضعها في الموقع الصحيح في السوق.</p>
+        <p class="svc-desc" data-en>Define and build your digital brand identity distinctively, placing it in exactly the right market position.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-num">04</div><div class="svc-icon">💰</div>
+        <div class="svc-name" data-ar>تخطيط الإعلانات المدفوعة</div>
+        <div class="svc-name-en" data-en>Paid Ads Planning</div>
+        <p class="svc-desc" data-ar>استراتيجية إعلانية ذكية تضمن أقصى عائد ممكن على كل جنيه تنفقه في حملاتك الرقمية.</p>
+        <p class="svc-desc" data-en>Smart advertising strategy to ensure maximum ROI on every dollar spent in your digital campaigns.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+      <div class="svc-card reveal d1">
+        <div class="svc-num">05</div><div class="svc-icon">📈</div>
+        <div class="svc-name" data-ar>نمو الجمهور</div>
+        <div class="svc-name-en" data-en>Audience Growth</div>
+        <p class="svc-desc" data-ar>خطط مجربة لتنمية جمهورك بشكل عضوي وحقيقي ومستدام على المدى الطويل دون التضحية بالجودة.</p>
+        <p class="svc-desc" data-en>Proven plans to grow your audience organically, authentically, and sustainably over the long term.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+      <div class="svc-card reveal d2">
+        <div class="svc-num">06</div><div class="svc-icon">🔬</div>
+        <div class="svc-name" data-ar>تحليل الأداء</div>
+        <div class="svc-name-en" data-en>Performance Analytics</div>
+        <p class="svc-desc" data-ar>قراءة عميقة لأرقام حسابك وتحويلها إلى قرارات استراتيجية واضحة تدفع النمو الحقيقي.</p>
+        <p class="svc-desc" data-en>Deep reading of your account data, transforming numbers into clear strategic decisions that drive real growth.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-num">07</div><div class="svc-icon">🎬</div>
+        <div class="svc-name" data-ar>إدارة الحملات</div>
+        <div class="svc-name-en" data-en>Campaign Direction</div>
+        <p class="svc-desc" data-ar>تصميم وتنفيذ حملات رقمية متكاملة تحقق أهدافك التسويقية بدقة وكفاءة عالية.</p>
+        <p class="svc-desc" data-en>Design and execute integrated digital campaigns that achieve your marketing goals with precision and efficiency.</p>
+        <div class="svc-arrow" aria-hidden="true">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PORTFOLIO ═══════ -->
+<section id="portfolio">
+  <div class="inner">
+    <div class="portfolio-hd reveal">
+      <div class="section-label"><span data-ar>أعمال مختارة</span><span data-en>Selected Work</span></div>
+      <h2 class="sec-title-ar" data-ar>نتائج حقيقية لعملاء <b>حقيقيين</b></h2>
+      <h2 class="sec-title-en" data-en>Real Results for Real <i>Clients</i></h2>
+    </div>
+    <div class="port-grid">
+
+      <div class="port-card reveal">
+        <div class="port-top">
+          <div class="port-badge">Education</div>
+          <div class="port-initial">م.ع</div>
+        </div>
+        <div class="port-body">
+          <div class="port-name" data-ar>مستر محمد عبدالمجيد</div>
+          <div class="port-name-en" data-en>Mr. Mohamed Abdelmajid</div>
+          <div class="port-niche"><span data-ar>تعليم · تطوير مهني</span><span data-en>Education · Professional Development</span></div>
+          <div class="metrics-list">
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>نمو الجمهور</span><span data-en>Audience Growth</span></span>
+              <div class="met-track"><div class="met-fill" data-w="85%"></div></div>
+              <span class="met-val">+340%</span>
+            </div>
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>معدل التفاعل</span><span data-en>Engagement Rate</span></span>
+              <div class="met-track"><div class="met-fill" data-w="72%"></div></div>
+              <span class="met-val">+5.8×</span>
+            </div>
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>الوصول الأسبوعي</span><span data-en>Weekly Reach</span></span>
+              <div class="met-track"><div class="met-fill" data-w="90%"></div></div>
+              <span class="met-val">250K+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-card reveal d1">
+        <div class="port-top">
+          <div class="port-badge">Personal Brand</div>
+          <div class="port-initial">م.م</div>
+        </div>
+        <div class="port-body">
+          <div class="port-name" data-ar>مستر محمود</div>
+          <div class="port-name-en" data-en>Mr. Mahmoud</div>
+          <div class="port-niche"><span data-ar>برسونال براند · محتوى قيادي</span><span data-en>Personal Brand · Leadership Content</span></div>
+          <div class="metrics-list">
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>نمو الجمهور</span><span data-en>Audience Growth</span></span>
+              <div class="met-track"><div class="met-fill" data-w="78%"></div></div>
+              <span class="met-val">+280%</span>
+            </div>
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>معدل التفاعل</span><span data-en>Engagement Rate</span></span>
+              <div class="met-track"><div class="met-fill" data-w="65%"></div></div>
+              <span class="met-val">+4.2×</span>
+            </div>
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>قوة الهوية</span><span data-en>Brand Strength</span></span>
+              <div class="met-track"><div class="met-fill" data-w="95%"></div></div>
+              <span class="met-val">95/100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-card reveal d2">
+        <div class="port-top">
+          <div class="port-badge">Coaching</div>
+          <div class="port-initial">إ.ع</div>
+        </div>
+        <div class="port-body">
+          <div class="port-name" data-ar>مستر إبراهيم عادل</div>
+          <div class="port-name-en" data-en>Mr. Ibrahim Adel</div>
+          <div class="port-niche"><span data-ar>كوتشينج · تطوير الذات</span><span data-en>Coaching · Self Development</span></div>
+          <div class="metrics-list">
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>نمو الجمهور</span><span data-en>Audience Growth</span></span>
+              <div class="met-track"><div class="met-fill" data-w="92%"></div></div>
+              <span class="met-val">+420%</span>
+            </div>
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>معدل التفاعل</span><span data-en>Engagement Rate</span></span>
+              <div class="met-track"><div class="met-fill" data-w="80%"></div></div>
+              <span class="met-val">+6.1×</span>
+            </div>
+            <div class="met-row">
+              <span class="met-lbl"><span data-ar>الاحتفاظ بالجمهور</span><span data-en>Audience Retention</span></span>
+              <div class="met-track"><div class="met-fill" data-w="88%"></div></div>
+              <span class="met-val">88%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ KPI METRICS ═══════ -->
+<section id="metrics">
+  <div class="inner" style="position:relative;z-index:1;">
+    <div class="metrics-hd reveal">
+      <div class="section-label centered">KPI Results</div>
+      <h2 class="sec-title-ar" data-ar style="text-align:center;">الأرقام <b>تتحدث</b></h2>
+      <h2 class="sec-title-en" data-en style="text-align:center;">The Numbers <i>Speak</i></h2>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-card reveal">
+        <div class="kpi-num" data-target="340" data-suffix="%">0%</div>
+        <div class="kpi-lbl">Reach Growth</div>
+        <div class="kpi-sub"><span data-ar>متوسط نمو الوصول</span><span data-en>Average reach increase</span></div>
+      </div>
+      <div class="kpi-card reveal d1">
+        <div class="kpi-num" data-target="5.8" data-suffix="×" data-float="1">0×</div>
+        <div class="kpi-lbl">Engagement</div>
+        <div class="kpi-sub"><span data-ar>مضاعفة التفاعل</span><span data-en>Engagement multiplier</span></div>
+      </div>
+      <div class="kpi-card reveal d2">
+        <div class="kpi-num" data-target="88" data-suffix="%">0%</div>
+        <div class="kpi-lbl">Retention</div>
+        <div class="kpi-sub"><span data-ar>معدل الاحتفاظ بالمتابعين</span><span data-en>Follower retention rate</span></div>
+      </div>
+      <div class="kpi-card reveal d3">
+        <div class="kpi-num" data-target="50" data-suffix="+">0+</div>
+        <div class="kpi-lbl">Brands Built</div>
+        <div class="kpi-sub"><span data-ar>علامة تجارية رقمية</span><span data-en>Digital brands developed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ TESTIMONIALS ═══════ -->
+<section id="testimonials">
+  <div class="inner">
+    <div class="testi-hd reveal">
+      <div class="section-label"><span data-ar>آراء العملاء</span><span data-en>Testimonials</span></div>
+      <h2 class="sec-title-ar" data-ar>ماذا يقول <b>العملاء</b></h2>
+      <h2 class="sec-title-en" data-en>What <i>Clients</i> Say</h2>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card reveal">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <div class="testi-q" aria-hidden="true">"</div>
+        <p class="testi-text" data-ar>منار غيّرت نظرتي للحضور الرقمي تمامًا. في أقل من ٣ أشهر، تضاعف جمهوري وبدأت أشعر أن صفحتي تعكس هويتي الحقيقية بشكل احترافي.</p>
+        <p class="testi-text-en" data-en>Manar completely changed my perspective on digital presence. In under 3 months, my audience doubled and my page finally reflected my true identity professionally.</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">م</div>
+          <div>
+            <div class="testi-name"><span data-ar>مستر محمد عبدالمجيد</span><span data-en>Mr. Mohamed Abdelmajid</span></div>
+            <div class="testi-role">Education Creator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal d1">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <div class="testi-q" aria-hidden="true">"</div>
+        <p class="testi-text" data-ar>استراتيجيتها مختلفة جدًا — لا تعمل على القواعد التقليدية، بل تبني نظامًا متكاملًا ينمو مع الوقت. النتائج تجاوزت توقعاتي بكثير.</p>
+        <p class="testi-text-en" data-en>Her strategy is truly different — not working on traditional rules, but building an integrated system that grows over time. The results far exceeded my expectations.</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">إ</div>
+          <div>
+            <div class="testi-name"><span data-ar>مستر إبراهيم عادل</span><span data-en>Mr. Ibrahim Adel</span></div>
+            <div class="testi-role">Life Coach & Speaker</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal d2">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <div class="testi-q" aria-hidden="true">"</div>
+        <p class="testi-text" data-ar>ما يميزها أنها لا تتعامل مع المحتوى كمنشورات عشوائية، بل كمنظومة استراتيجية متكاملة. أنصح بها بشدة لكل من يريد حضورًا رقميًا حقيقيًا.</p>
+        <p class="testi-text-en" data-en>What distinguishes her is treating content not as random posts, but as a complete strategic system. I strongly recommend her for anyone wanting genuine digital presence.</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">م</div>
+          <div>
+            <div class="testi-name"><span data-ar>مستر محمود</span><span data-en>Mr. Mahmoud</span></div>
+            <div class="testi-role">Personal Brand & Entrepreneur</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact">
+  <div class="inner">
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <div class="section-label"><span data-ar>تواصل معي</span><span data-en>Get In Touch</span></div>
+        <h2 class="sec-title-ar" data-ar>لنبنِ <b>حضورك</b><br>الرقمي معًا</h2>
+        <h2 class="sec-title-en" data-en>Let's Build Your<br><i>Digital Presence</i></h2>
+        <p class="contact-tagline">
+          <span data-ar>فكرتك + استراتيجيتي = <b>نجاح حقيقي</b></span>
+          <span data-en>Your idea + my strategy = <b>real success</b></span>
+        </p>
+        <div class="c-items">
+          <div class="c-item">
+            <div class="c-icon" aria-hidden="true">✉</div>
+            <a href="mailto:smanar874@gmail.com" class="c-text">smanar874@gmail.com</a>
+          </div>
+          <div class="c-item">
+            <div class="c-icon" aria-hidden="true">📱</div>
+            <span class="c-text">01030762500 · 01044258595</span>
+          </div>
+          <div class="c-item">
+            <div class="c-icon" aria-hidden="true">🌍</div>
+            <span class="c-text">
+              <span data-ar>مصر · متاحة عن بُعد عالميًا</span>
+              <span data-en>Egypt · Available Remotely Worldwide</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-col reveal d2">
+        <div class="form-row">
+          <label class="form-lbl" for="f-name"><span data-ar>الاسم الكامل</span><span data-en>Full Name</span></label>
+          <input type="text" class="form-input" id="f-name" autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label class="form-lbl" for="f-email"><span data-ar>البريد الإلكتروني</span><span data-en>Email Address</span></label>
+          <input type="email" class="form-input" id="f-email" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label class="form-lbl" for="f-service"><span data-ar>الخدمة المطلوبة</span><span data-en>Service Needed</span></label>
+          <input type="text" class="form-input" id="f-service">
+        </div>
+        <div class="form-row">
+          <label class="form-lbl" for="f-msg"><span data-ar>رسالتك</span><span data-en>Your Message</span></label>
+          <textarea class="form-textarea" id="f-msg"></textarea>
+        </div>
+        <button class="form-btn" id="js-submit">
+          <span data-ar>أرسل الآن</span>
+          <span data-en>Send Message</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="footer-logo">منار صابر ✦ Manar Saber</div>
+  <div class="footer-copy">© 2025 Manar Saber · All Rights Reserved</div>
+  <div class="footer-soc">
+    <a href="https://www.facebook.com/share/1CFnDfoz3R/" target="_blank" rel="noopener noreferrer"
+       class="soc-link" aria-label="Facebook">f</a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════ -->
+<script>
+/* ── Cursor ── */
+const cur  = document.getElementById('js-cur');
+const ring = document.getElementById('js-ring');
+let mx=0, my=0, rx=0, ry=0;
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cur.style.left = mx + 'px';
+  cur.style.top  = my + 'px';
+});
+(function tick() {
+  rx += (mx - rx) * .11;
+  ry += (my - ry) * .11;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(tick);
+})();
+document.querySelectorAll('a, button, .svc-card, .port-card, .testi-card, .pillar, .kpi-card')
+  .forEach(el => {
+    el.addEventListener('mouseenter', () => { ring.style.width='56px'; ring.style.height='56px'; ring.style.opacity='1'; });
+    el.addEventListener('mouseleave', () => { ring.style.width='38px'; ring.style.height='38px'; ring.style.opacity='.5'; });
+  });
+
+/* ── Navbar scroll ── */
+window.addEventListener('scroll', () =>
+  document.getElementById('js-nav').classList.toggle('scrolled', scrollY > 55)
+);
+
+/* ── Scroll reveal ── */
+const ro = new IntersectionObserver(entries =>
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); }),
+  { threshold: .1 }
+);
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+/* ── Portfolio metric bars ── */
+const bo = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.met-fill').forEach(b =>
+        setTimeout(() => { b.style.width = b.dataset.w; }, 200)
+      );
+      bo.unobserve(e.target);
+    }
+  });
+}, { threshold: .25 });
+document.querySelectorAll('.port-card').forEach(c => bo.observe(c));
+
+/* ── KPI counters ── */
+const ko = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.kpi-num[data-target]').forEach(el => {
+        const target = parseFloat(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const dec    = parseInt(el.dataset.float || 0);
+        let v = 0;
+        const inc = target / (1800 / 16);
+        const t = setInterval(() => {
+          v = Math.min(v + inc, target);
+          el.textContent = (dec ? v.toFixed(dec) : Math.floor(v)) + suffix;
+          if (v >= target) clearInterval(t);
+        }, 16);
+      });
+      ko.unobserve(e.target);
+    }
+  });
+}, { threshold: .3 });
+const metricsEl = document.getElementById('metrics');
+if (metricsEl) ko.observe(metricsEl);
+
+/* ── Language toggle ── */
+const html = document.documentElement;
+
+function setLang(lang) {
+  const isAr = lang === 'ar';
+  html.setAttribute('data-lang', lang);
+  html.setAttribute('lang', lang);
+  html.setAttribute('dir', isAr ? 'rtl' : 'ltr');
+
+  /* Update all lang buttons */
+  document.querySelectorAll('.lang-btn').forEach(b => b.textContent = isAr ? 'EN' : 'AR');
+
+  /* Update form placeholders */
+  const fn = document.getElementById('f-name');
+  const fe = document.getElementById('f-email');
+  const fs = document.getElementById('f-service');
+  const fm = document.getElementById('f-msg');
+  if (fn) fn.placeholder = isAr ? 'اسمك الكامل'            : 'Your full name';
+  if (fe) fe.placeholder = 'email@example.com';
+  if (fs) fs.placeholder = isAr ? 'ما الذي تحتاجه؟'        : 'What service do you need?';
+  if (fm) fm.placeholder = isAr ? 'أخبرني عن مشروعك...'    : 'Tell me about your project...';
+}
+
+/* Attach both desktop + mobile lang buttons */
+['js-lang', 'js-lang2'].forEach(id => {
+  const btn = document.getElementById(id);
+  if (btn) btn.addEventListener('click', () =>
+    setLang(html.getAttribute('data-lang') === 'ar' ? 'en' : 'ar')
+  );
+});
+
+/* Init in Arabic */
+setLang('ar');
+
+/* ── Mobile nav ── */
+const mob     = document.getElementById('js-mob');
+const mobnav  = document.getElementById('js-mobnav');
+const mobclose= document.getElementById('js-mobclose');
+
+if (mob && mobnav) {
+  mob.addEventListener('click', () => mobnav.classList.add('open'));
+  mobclose.addEventListener('click', () => mobnav.classList.remove('open'));
+  document.querySelectorAll('.mob-link').forEach(a =>
+    a.addEventListener('click', () => mobnav.classList.remove('open'))
+  );
+  /* Close on outside click */
+  mobnav.addEventListener('click', e => {
+    if (e.target === mobnav) mobnav.classList.remove('open');
+  });
+}
+
+/* ── Form submit feedback ── */
+const sbtn = document.getElementById('js-submit');
+if (sbtn) {
+  sbtn.addEventListener('click', function () {
+    const arEl = this.querySelector('[data-ar]');
+    const enEl = this.querySelector('[data-en]');
+    const origAr = arEl ? arEl.textContent : '';
+    const origEn = enEl ? enEl.textContent : '';
+    this.style.cssText = 'background:#1a1a1a;color:var(--gold);outline:1px solid var(--gold);';
+    if (arEl) arEl.textContent = '✦ تم الإرسال';
+    if (enEl) enEl.textContent = '✦ Sent';
+    setTimeout(() => {
+      this.style.cssText = '';
+      if (arEl) arEl.textContent = origAr;
+      if (enEl) enEl.textContent = origEn;
+    }, 3000);
+  });
+}
+</script>
+</body>
+</html>
